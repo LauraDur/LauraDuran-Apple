@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Parcial final</title>
+	<link href="apple parcial.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	<div id="contenedor">
+		<img src="640px-Apple-logo.png" class="logop" alt="logop">
+		<!-- COMMENT <div class="mac" id="inicio">  -->
+		<!-- <div class="gogo" id="inicio">
+			 -->
+		<!--	<div style="text-align: center;"> -->
+		<!--	<img src="Mac_logo_black.png" alt="logop" width="800" height="192" style="vertical-align:middle;margin:50px 0px;">-->
+		<!--	</div> -->
+
+	</div>
+	<div>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="design_top_midnight__codbsd86bjxy_large.jpg" style="width:100%">
+				<div class="text">Macbook Pro 2020</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img src="canvas1.png" style="width:100%">
+				<div class="text">iPhone 13</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img src="canvas2.png" style="width:100%">
+				<div class="text">Macbook Pro 2022</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="canvas3.png" style="width:100%">
+				<div class="text">Apple</div>
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar" align="center">
+		<a href="#inicio">INICIO</a>
+		<a href="#productos">PRODUCTOS</a>
+		<a href="#nosotros">NOSOTROS</a>
+		<a href="#contactos">CONTACTOS</a>
+	</nav>
+	</div>
+	<!--<div id="navbar">-->
+
+	<!--</div>-->
+
+
+	<section>
+		<div class="producto" id="productos">
+			<p class="titulo1">BEST SELLERS</p>
+
+			<img src="design_top_midnight__codbsd86bjxy_large.jpg" class="macbook" alt="foto1">
+			<h3 class="titulomacbook">MacBook Air</h3>
+			<p class="textomacbook">La nueva MacBook Air, rediseñada para aprovechar toda la potencia del revolucionario
+				chip M2, combina una velocidad increíble y una gran eficiencia energética en una carcasa de aluminio
+				resistente e increíblemente delgada.
+			</p>
+			<img src="iPhone-13-9-1.webp" class="iph" alt="foto2">
+			<h3 class="tituloiph">iPhone 13 </h3>
+			<p class="textoiph">Nuestro sistema de dos cámaras más avanzado.Ícono de durabilidad.Resistente de arriba
+				abajo. Y de un borde a otro.Ícono del chip.Un chip superrápido que acelera todo lo que haces.Ícono de la
+				batería. Un gran salto en duración de batería que vas a notar todos los días.
+			</p>
+			<img src="594258-Product-0-I-637901950977260733_800x800.webp" class="macpro" alt="foto3">
+			<h3 class="titulomacpro">MacBoor Pro 13</h3>
+			<p class="textomacpro">Gracias al nuevo chip M2, la MacBook Pro de 13 pulgadas es más.poderosa que nunca.
+				Ofrece hasta 20 horas de batería y un sistema de enfriamiento activo que mantiene un
+				rendimiento.increíble en el mismo diseño compacto de siempre.Con su espectacular pantalla Retina, cámara
+				FaceTime HD y micrófonos con calidad de estudio.
+			</p>
+		</div>
+
+
+	</section>
+
+	<div class="nosotros" id="nosotros">
+		<div class="nosotrosText">
+			<p class="titulo2">SOBRE NOSOTROS</p>
+			<p class="textonosotros">Apple, Inc. es una empresa estadounidense que diseña y produce equipos
+				electrónicos,
+				software y servicios en línea. Tiene su sede principal en el Apple Park, en Cupertino (California,
+				Estados
+				Unidos) y la sede europea en la ciudad de Cork (Irlanda). Sus productos de hardware incluyen el teléfono
+				inteligente iPhone, la tableta iPad, la computadora personal Mac, el reproductor de medios portátil
+				iPod, el
+				reloj inteligente Apple Watch y el reproductor de medios digitales Apple TV.</p>
+
+			<div>
+				<p class="titulo3">MISION</p>
+			</div>
+			<p class="textomision">Apple tiene innovadoras soluciones de hardware, software e internet con las que
+				intenta
+				ofrecer la mejor experiencia de informática personal a educadores, estudiantes, profesionales y
+				consumidores
+				de todo el planeta. </p>
+
+			<div>
+				<p class="titulo4">VISION</p>
+			</div>
+			<p class="textovision">Su visión es ser considerada una opción viable por sus aliados estratégicos y
+				clientes,
+				una que ofrece servicios y soluciones basadas en la innovación principalmente, pero también en la
+				tecnología
+				avanzada, calidad y servicio que superan altas expectativas.</p>
+
+		</div>
+		<div>
+			<img src="640px-Apple-logo.png" class="sobreNosotrosFoto">
+		</div>
+
+
+
+		<br>
+
+
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) { slideIndex = 1 }
+				if (n < 1) { slideIndex = slides.length }
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+			} 
+		</script>
+	</div>
+
+	<div class="contactos" id="contactos">
+		<p class="titulo5">PREGUNTAS FRECUENTES</p>
+
+		<h3 class="titulopregunta">¿Qué hago si me olvidé del código del iPhone?</h3>
+		<p class="textopregunta">Si no recuerdas el código, tendrás que borrar el iPhone para eliminar todos los
+			datos y
+			ajustes, incluido el código. Si has hecho una copia de seguridad del iPhone, puedes restaurar los datos
+			y la
+			configuración después de restaurar el iPhone.</p>
+
+		<h3 class="titulopregunta1">¿Qué hago si veo la pantalla de Bloqueo de activación?</h3>
+		<p class="textopregunta1">Averigua qué hacer si ves la pantalla de Bloqueo de activación en el dispositivo o
+			si
+			se te pide que elimines el bloqueo de activación de un dispositivo que no está en tu poder.</p>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10670.441436011273!2d-122.00966060193811!3d37.33442972514886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1ses-419!2sdo!4v1660147766598!5m2!1ses-419!2sdo"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade" class="mapa">
+		</iframe>
+		<!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10670.441436011273!2d-122.00966060193811!3d37.33442972514886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1ses-419!2sdo!4v1660147766598!5m2!1ses-419!2sdo" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>-->
+
+		<video width="260" height="160" class="anuncio" autoplay muted loop>
+			<source src="videoplayback.mp4" alt="anuncio">
+			Your browser does not support the video tag.
+		</video>
+		<img src="hubcamara.jpg" class="anuncio3" alt="ukn">
+	</div>
+	<footer class="footer">
+
+		<p>Copyright © 2022 Apple Inc.<br>
+			Todos los derechos reservados</p>
+		<br> <a href="apple-formulario.html" class="formulario"> Administrar tu Apple ID<br>
+			iCloud.com</a>
+		<a href="mailto:lulastore@gmail.com" class="email">CLICK
+			<br>Suscribete para ver lo nuevo que tiene Apple.</a>
+
+	</footer>
+	</div>
+
+</body>
+
+</html>
